@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { RootState } from '@/store/store';
 import { useConversion } from '@/features/conversion/hooks/useConversion';
-import { Input } from '@/components/atoms/Input/Input';
 import { ChevronDown, RotateCcw, Star } from 'lucide-react';
 
 export const Converter: React.FC = () => {

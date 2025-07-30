@@ -15,10 +15,10 @@ export const Header: React.FC = () => {
     <header className="bg-gradient-to-r from-slate-700 to-slate-800 text-white px-4 py-4 shadow-lg relative">
       <div className="flex items-center justify-between">
         <div className="flex items-center space-x-3">
-          <Calculator className="w-6 h-6 " />
+          <Calculator className="w-6 h-6" />
           <h1 className="text-lg font-semibold">Unit Converter</h1>
         </div>
-        {/* <div className="flex items-center space-x-2">
+        <div className="flex items-center space-x-2 hidden">
           <button 
             onClick={() => setShowSettings(!showSettings)}
             className="p-2 rounded-full hover:bg-slate-600 transition-colors"
@@ -28,7 +28,7 @@ export const Header: React.FC = () => {
           <button className="p-2 rounded-full hover:bg-slate-600 transition-colors">
             <Menu className="w-5 h-5" />
           </button>
-        </div> */}
+        </div>
       </div>
 
       {/* Settings Panel */}

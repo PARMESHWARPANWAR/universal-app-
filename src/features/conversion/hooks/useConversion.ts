@@ -1,8 +1,7 @@
-import { useState, useCallback, useMemo, useEffect } from 'react';
+import { useCallback, useMemo, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from '@/store/store';
 import { ConverterFactory } from '@/lib/converters/core/ConverterFactory';
-import { ConversionResult } from '@/shared/utils/types';
 import { useDebounce } from '@/shared/hooks/useDebounce';
 import { setInputValue, setFromUnit, setResults } from '@/store/slices/conversionSlice';
 

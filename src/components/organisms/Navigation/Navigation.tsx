@@ -11,8 +11,14 @@ const tabs = [
   { id: 'science', name: 'SCIENCE', color: 'bg-purple-500' },
   { id: 'misc', name: 'MISC.', color: 'bg-orange-500' }
 ];
+interface Category {
+    id: string;
+    name: string;
+    icon: string;
+    color: string;
+}
 
-const categories: Record<string, any[]> = {
+const categories: Record<string, Category[]> = {
   basic: [
     { id: 'length', name: 'Length', icon: '📏', color: 'bg-blue-50 border-blue-200' },
     { id: 'area', name: 'Area', icon: '◼️', color: 'bg-blue-50 border-blue-200' },
